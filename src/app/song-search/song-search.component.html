@@ -1,0 +1,17 @@
+<div class="container">
+  <div>Serarch by Title</div>
+  <div>
+    <input [(ngModel)]="searchText" /> 
+  </div>
+  <div>
+    <button (click)="searchByTitle()">Search</button>
+  </div>
+  <div>
+  <ul *ngFor="let song of songResult">
+    <li>{{song.title}} - {{song.artist}}</li>
+  </ul>
+  </div>
+
+
+
+</div>
